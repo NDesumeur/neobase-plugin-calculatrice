@@ -1,0 +1,16 @@
+{
+  "id": "neobase.calculatrice",
+  "name": "Calculatrice",
+  "version": "1.0.0",
+  "author": "NDesumeur",
+  "description": "Une calculatrice scientifique : opérations, fonctions, et un historique de tes calculs.",
+  "entry": "index.js",
+  "view": "calculatrice",
+  "neobase": ">=4.0.0",
+  "type": "app",
+  "category": "Outils",
+  "mobile": true,
+  "system": false,
+  "dependencies": {},
+  "permissions": ["storage"]
+}
