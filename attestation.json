@@ -1,0 +1,9 @@
+{
+  "pluginId": "neobase.calculatrice",
+  "repo": "NDesumeur/neobase-plugin-calculatrice",
+  "version": "1.2.1",
+  "sha256": "d870d694adff4b33ae107b4314089f442e4ffe0dad1052b919b13517ed07841e",
+  "approvedAt": "2026-10-31T17:51:20.941Z",
+  "neobase": ">=4.0.0",
+  "signature": "NSeS6xwQneqc6eqEoDCQjhJIQ1EJtiUo0I46spsDsCBS0b71AcReMikF1V0aq3dSEye2cpPJOLDnut2v+MH6Dg=="
+}
