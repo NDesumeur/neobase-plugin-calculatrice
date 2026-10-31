@@ -2,11 +2,30 @@
 // Ses données sont dans le dossier du plugin, que NeoBase sauvegarde (synchro cloud et sauvegardes) ; à la première ouverture elle reprend ce que tu avais dans NeoBase.
 // Elle demande l'accès complet pour utiliser les outils d'interface de NeoBase. NeoBase ne l'ouvre que si elle est signée.
 const HTML = "<div class=\"appWrap\">\n      <div class=\"agHead\"><span class=\"label\">Calculatrice</span><span class=\"hint\">Tape au clavier ou clique · Entrée : calculer · Échap : effacer</span></div>\n      <div class=\"calcMain\">\n        <div class=\"sysCard px calcPad\"><div class=\"calcScreen\"><span id=\"calcMode\" class=\"badge\"></span><input id=\"calcIn\" spellcheck=\"false\" autocomplete=\"off\" placeholder=\"0\"><div id=\"calcOut\"></div></div><div id=\"calcKeys\"></div></div>\n        <div class=\"sysCard px calcSide\"><div class=\"chHead\"><span class=\"label\">Historique</span><button class=\"x\" id=\"calcClearHist\" style=\"margin-left:auto;font-size:8px\">EFFACER</button></div><div id=\"calcHist\"></div></div>\n      </div>\n    </div>";
+/*CSS-MOVED*/ const CSS = `.shGrid td.num{text-align:right}
+.calcMain{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:20px;align-items:start}
+.calcScreen{position:relative;padding:14px 16px;background:var(--field);box-shadow:inset 0 0 0 3px var(--line)}
+#calcMode{position:absolute;top:10px;left:12px}
+#calcIn{all:unset;display:block;width:100%;text-align:right;font:26px var(--title);color:#fff;padding-top:18px}
+#calcIn::placeholder{color:var(--ph)}
+#calcOut{text-align:right;font:18px var(--text);color:var(--pink);min-height:26px;margin-top:6px}
+#calcKeys{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:6px}
+.calcKey{height:50px;font:15px var(--text);padding:0;margin:3px}
+.calcKey.wide{grid-column:span 2}
+.calcKey.num{--fill:var(--btnh);font-size:19px}
+.calcRow{all:unset;cursor:var(--cp,pointer);display:flex;flex-direction:column;align-items:flex-end;padding:8px 6px;border-bottom:1px solid rgba(255,255,255,.06)}
+.calcRow:hover{background:rgba(255,255,255,.05)}
+.calcRow span{font-size:13px;color:var(--muted);word-break:break-all}
+.calcRow b{font-size:17px;color:#fff}
+#calcHist{max-height:520px;overflow-y:auto}
+.chHead{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+`;  // le style de ce plugin (il utilise les variables du thème de NeoBase)
 export default async function (ctx) {
   const view = ctx.view;
   if (!ctx.host) { view.textContent = "Ce plugin doit être approuvé par NeoBase pour s'ouvrir."; return; }
   const { el, toast, sfx, ask, newTab, pixIcon, PIX, WX } = ctx.host;
   const folder = ctx.folder, legacy = ctx.legacy || {};
+  ctx.host.addStyle(CSS);
   view.innerHTML = HTML;
   const $ = id => id === "calcApp" ? view : view.querySelector('#' + id);  // les identifiants de ta vue, sans toucher à ceux du reste de NeoBase
   const doc = async n => { try { return await folder.read(n); } catch { return null; } };
