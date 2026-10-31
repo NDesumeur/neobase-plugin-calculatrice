@@ -1,12 +1,11 @@
 # Calculatrice
 
-Une calculatrice scientifique pour NeoBase : opérations, fonctions (sin, cos, ln, √…), degrés ou
-radians, et un historique de tes calculs, synchronisé entre tes appareils.
+Calculatrice scientifique : opérations, fonctions et historique de tes calculs.
+
+Ses données sont rangées dans le dossier du plugin, que NeoBase sauvegarde (synchro cloud comprise). Au premier lancement, il reprend ce que tu avais déjà dans NeoBase.
 
 ## Installer
 
 Dans NeoBase : **NeoStore → À découvrir → Calculatrice → Installer**.
 
-## Développer un plugin
-
-Le format et le guide sont dans le [SDK NeoBase](https://github.com/NDesumeur/neobase-sdk).
+Développer un plugin : voir le [SDK NeoBase](https://github.com/NDesumeur/neobase-sdk).
