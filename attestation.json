@@ -1,6 +1,6 @@
 {
-  "pluginId": "neobase.calculatrice",
-  "repo": "NDesumeur/neobase-plugin-calculatrice",
+  "pluginId": "neodex.calculatrice",
+  "repo": "NDesumeur/neodex-plugin-calculatrice",
   "version": "1.1.0",
   "sha256": "c71e3843a6ba6a4242aa7b27f469a4d05b7c59d4f76797c2c13f836749033082",
   "approvedAt": "2026-10-31T22:44:05.999Z",
