@@ -1,9 +1,9 @@
 {
   "pluginId": "neodex.calculatrice",
   "repo": "NDesumeur/neodex-plugin-calculatrice",
-  "version": "1.2.2",
-  "sha256": "d96ef04e1ae2a54709ef382b0df2650a1f416957c0cf90f7c3de5b2fbb22e0ad",
-  "approvedAt": "2026-11-04T10:05:10.883Z",
+  "version": "1.2.3",
+  "sha256": "64ef778e4993cf7e4c224de5ee28173fc560dd0c5543f45b3d372b0dd611d0ce",
+  "approvedAt": "2026-11-04T15:58:36.034Z",
   "neobase": ">=4.0.0",
-  "signature": "0fFWgbO4GfTt9hILRZpv11fKXWQg0m9xMPIhWFnnqREmovBn1doRGgNv6LqpOcobl6R1Pmi98VZaw4xbTY0/Ag=="
+  "signature": "Vjdqg8GY91nmttuwBfj4jo8fohFkDRuVWT0zy2CQbrobBzScT9B7mgkGR3dPPCifNIhONxAGcwVAUPrnZJNsCQ=="
 }
