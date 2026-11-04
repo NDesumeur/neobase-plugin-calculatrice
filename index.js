@@ -1,6 +1,6 @@
 // Calculatrice : ton appli d'origine (HTML et code inchangés), livrée en plugin.
 // Ses données sont dans le dossier du plugin, que NeoBase sauvegarde (synchro cloud et sauvegardes) ; à la première ouverture elle reprend ce que tu avais dans NeoBase.
-// Elle demande l'accès complet pour utiliser les outils d'interface de NeoBase. NeoBase ne l'ouvre que si elle est signée.
+// Elle tourne dans le bac à sable de NeoBase, avec ses outils d'interface (ctx.host) et seulement les autorisations de son plugin.json.
 const HTML = "<div class=\"appWrap\">\n      <div class=\"agHead\"><span class=\"label\">Calculatrice</span><span class=\"hint\">Tape au clavier ou clique · Entrée : calculer · Échap : effacer</span></div>\n      <div class=\"calcMain\">\n        <div class=\"calcBody\"><div class=\"calcTop\"><span class=\"calcBrand\">NEO-CALC 9000</span><div class=\"calcSolar\"><i></i><i></i><i></i><i></i></div></div><div class=\"calcScreen\"><span id=\"calcMode\" class=\"badge\"></span><input id=\"calcIn\" spellcheck=\"false\" autocomplete=\"off\" placeholder=\"0\"><div id=\"calcOut\"></div></div><div id=\"calcKeys\"></div></div>\n        <div class=\"sysCard px calcSide\"><div class=\"chHead\"><span class=\"label\">Historique</span><button class=\"x\" id=\"calcClearHist\" style=\"margin-left:auto;font-size:8px\">EFFACER</button></div><div id=\"calcHist\"></div></div>\n      </div>\n    </div>";
 /*CSS-MOVED*/ const CSS = `.shGrid td.num{text-align:right}
 .chHead{display:flex;align-items:center;gap:16px;flex-wrap:wrap}

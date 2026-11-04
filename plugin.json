@@ -1,7 +1,7 @@
 {
   "id": "neobase.calculatrice",
   "name": "Calculatrice",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "NDesumeur",
   "description": "Calculatrice scientifique : opérations, fonctions et historique de tes calculs.",
   "icon": "icon.png",
@@ -13,7 +13,8 @@
   "mobile": true,
   "system": false,
   "dependencies": {},
+  "sdk": "2.1.0",
   "permissions": [
-    "full"
+    "storage"
   ]
 }
