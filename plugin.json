@@ -1,7 +1,7 @@
 {
   "id": "neodex.calculatrice",
   "name": "Calculatrice",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "author": "NDesumeur",
   "description": "Calculatrice scientifique : opérations, fonctions et historique de tes calculs.",
   "icon": "icon.png",
